@@ -1,0 +1,19 @@
+@import"./config/normalize";
+@import"./config/mixins";
+@import"./config/variables";
+@import"./components/nav";
+@import"./components/header";
+@import"./components/main";
+@import"./components/asside";
+@import"./components/footer";
+
+
+* {
+box-sizing: border-box;
+}
+.wrapper {
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+@import"./config/media";

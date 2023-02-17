@@ -1,0 +1,39 @@
+.footer {
+    position: absolute;
+    top: 792px;
+    left: 1098px;
+    @include indent;
+    width: 268px;
+    height: 200px;
+    background-color:white;
+}
+.footer__text {
+    padding-top: 12px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: $color-name;
+    //background-color: blue;
+}
+.footer__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    @include indent;
+    padding-top: 15px;
+    padding-bottom: 45px;
+    width: 220px;
+    height: 100%;
+    list-style-type: none;
+}
+.footer__buttons-size {
+    width: 57px;
+    height: 57px;
+    border: none;
+}
+.footer__img-size {
+    width: 57px;
+    height: 57px;
+}

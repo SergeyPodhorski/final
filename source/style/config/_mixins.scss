@@ -1,0 +1,72 @@
+@mixin indent () {
+    margin: 0 auto;
+    padding: 0;
+}
+//nav-border
+@mixin nav-border() {
+   border-right: 2px solid #F1F1F1;
+}
+//size-img
+@mixin size-img() {
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    width: 35px;
+    height: 20px;
+    
+}
+@mixin img-size () {
+    position: absolute;
+    top: 26%;
+    left: 28%;
+    width: 25px;
+    height: 25px;
+}
+//triangle
+@mixin triangle-black () {
+    position: absolute;
+    top: 53px;
+    left: 63px;
+    border-style: solid;
+    border-width: 2px 2px 5px 2px;
+    border-color: transparent transparent black transparent;  
+}
+@mixin triangle-red () {
+    content: "";
+    position: absolute;
+    top:0;
+    left:42px;
+    border-style: solid;
+    border-width: 5px 2px 2px 2px;
+    border-color: red transparent transparent transparent;  
+}
+//navigation size box
+@mixin size-box () {
+    position: relative;
+    width: 160px;
+    height:100%;
+    text-align: left;
+}
+@mixin asside-triangle () {
+    position:absolute;
+    top:34px;
+    left:45%;
+    border-style: solid;
+    border-width: 9px 6px 6px 6px;
+    border-color: #C53E5B transparent transparent transparent;  
+    filter: drop-shadow(0 0 5px #C53E5B);
+}
+@mixin navigation-triangle () {
+    position:absolute;
+    top:34px;
+    left:53px;
+    transform: rotate(-90deg);
+    border-style: solid;
+    border-width: 9px 6px 6px 6px;
+    border-color:  $nav-aside-color transparent transparent transparent;  
+    filter: drop-shadow(0 0 5px  $nav-aside-color);
+}
+@mixin max-width_768 () {
+    width:100vw;
+    max-width: 440px;
+}

@@ -1,0 +1,176 @@
+.header {
+    margin-left: 75px;
+    width: 1291px;
+    height: 172px;
+}
+.burger {
+    position: relative;
+    left:45%;
+    height: 10px;
+    width: 50px;
+    display: none;
+    background: red;
+}
+.burger::before {
+    content: "";
+    position: absolute;
+    right: 0.5px;
+    top: 15px;
+    width: 50px;
+    height: 10px;
+    background: red;
+}
+.burger::after {
+    content: "";
+    position: absolute;
+    right: 0.5px;
+    top: 30px;
+    width: 50px;
+    height: 10px;
+    background: red;
+}
+.heder__nav {
+    display: flex;
+    width: 100%;
+    height: 72px;
+    border-bottom:2px solid #F1F1F1 ;
+}
+.header__nav-menu {
+    position: relative;
+    width: 72px;
+    height: 100%;
+    @include nav-border;
+}
+.header__nav-img {
+    position: relative;
+    width: 65px;
+    height: 100%;
+    @include nav-border;
+}
+.nav-img-media {
+    display: none;
+}
+.header__nav-searching {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+}
+.heder__nav-input {   
+    width: 240px;
+    height: 36px;
+    border-radius: 20px;
+    font-size: 12px;
+    border: none;
+    background: none;
+    outline:0;
+}
+    input::-webkit-search-decoration,
+    input::-webkit-search-cancel-button,
+    input::-webkit-search-results-button,
+    input::-webkit-search-results-decoration { 
+        display: none;
+}
+.form {
+    width: 290px;
+    height: 36px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid #F1F1F1;
+}
+.header__nav-button {
+    vertical-align: middle;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.header__nav-Jenner {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    width: 230px;
+    height: 100%;
+}
+.header__nav-text {
+    margin-top: 15px;
+}
+.header__nav-name {
+   padding: 0 30px 8px 15px;
+   font-size: 13px;
+   font-family: $font-familyheader;
+   color: $main-colortext;
+}
+.header__nav-smalltext {
+    padding-left: 15px;
+    font-size: 10px;
+    font-family:$font-familyheader;
+    color: #CACACA;
+}
+.nav-img {
+    @include size-img;
+    cursor: pointer;
+}
+.header__nav-imgsize {
+    @include img-size;
+    cursor: pointer;
+}
+.header__statistics {
+    display: flex;
+    height: 100px;
+}
+.header__statistics-visitors,
+.header__statistics-customers,
+.header__statistics-orders,
+.header__statistics-sales,
+.header__statistics-shipments,
+.header__statistics-revenue,
+.header__statistics-reviews  {
+   @include size-box;
+}
+.triangle {
+   @include triangle-black  
+}
+.triangle::before {
+   @include triangle-red
+}
+.header__statistics-text {
+    margin:15px 11px 5px 60px;
+    font-size: $textsize-header;
+    font-family:$font-familyheader;
+    color:#CFCFCF;
+}
+.header__statistics-colorcount {
+    margin: 5px 0 5px 60px;
+    font-size: 20px;
+    font-family:$font-familyheader;
+    color: $main-colortext;
+}
+.header__statistics-countfirst {
+    margin: 5px 0 5px 70px;
+    font-size: $textsize-header;
+    font-family:$font-familyheader;
+    color: #C7C7C7;
+}
+.header__statistics-countsecond {
+    margin: 5px 0 5px 12px;
+    font-size: $textsize-header;
+    font-family:$font-familyheader;
+    color: #C7C7C7;
+}
+.header__statistics-button {
+    position: relative;
+    flex-grow: 1;
+}
+.header__statistics-buttonstyle {
+    position: absolute;
+    top: 38%;
+    left:17%;
+    color: $main-colortext;
+    font-size: $textsize-header;
+    font-family: $font-familyheader;
+    border: none;
+    background: none;
+    cursor: pointer;
+}

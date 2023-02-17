@@ -1,0 +1,80 @@
+.nav-bar {
+   position: absolute;
+   width: 75px; 
+   height: 936px;
+}
+.nav-bar__logo {
+    width: 100%;
+    height: 72px;
+    background: url(../../source/img/nav/logo.png) no-repeat center;
+    background-size: 33px 23px;
+    border: 1px solid rgb(240, 236, 236);
+}
+.nav-bar__navigation {
+    width: 100%;
+    height: 100%;
+    background-color: $nav-aside-color;
+}
+.navigation__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin:0 0 0 10px;
+    list-style: none;
+    font-size: 10px;
+}
+.navigation__list-link {
+    text-decoration: none;
+    color:$icons-color_nav;
+}
+.navigation__list-itemlast {
+    position: relative;
+    flex-grow: 1;
+    padding-top: 30px;
+}
+.navigation__list-item {
+    position: relative;
+    padding-top: 30px;
+}
+.navigation__list-item:hover {
+    .nav__triangle {
+        display: block;
+    }
+}
+.navigation__list-itemlast:hover {
+    .nav__triangle {
+        display: block;
+    }
+}
+.nav__triangle {
+    display: none;
+    @include navigation-triangle;
+}
+.navigation__text {
+    margin-right: 15px;
+}
+.navigation__text-stactics {
+    margin-right: 8px;
+}
+.navigation__text-users {
+    margin-right: 16px;
+}
+.navigation__text-settings {
+    margin-right: 7px;
+}
+.navigation__text-queris {
+    margin-right: 12px;
+}
+.navigation-button {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    align-items: stretch;
+    width: 20px;
+    height: 20px;
+    background: url(../../source/img/nav/navigation-button.png);
+    background-size: 100%;
+    border: none;
+    cursor: pointer;
+}
